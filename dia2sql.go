@@ -62,7 +62,7 @@ func main() {
 	         database_table_name_as_xml_node,_:=xmlquery.Query(database_table_xml_node, path)
 		 //fmt.Println(database_table_name)
 		 table_name_str=strings.Trim(database_table_name_as_xml_node.InnerText(),"#")
-		 fmt.Println("\n-- %%Queries for table ",table_field_name_str)
+		 fmt.Println("\n-- %%Queries for table ",table_name_str)
 		if (is_verbose_output) { fmt.Println("table name ",index+1, " ",table_name_str ) }
 		 table_sql_query:="create table if not exists "+table_name_str+" ("
 		 
